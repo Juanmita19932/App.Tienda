@@ -43,8 +43,29 @@ namespace App.Tienda
                 insertCommand.ExecuteNonQuery();
             
         }
-         
+        public DataTable ListarFabricantes()
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM fabricantes",
+                connection.ObtenerConexion());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            adapter.Fill(dt);
 
-   
+            return dt;
+        }
+
+    public DataTable ListarArticulos()
+        {
+            MySqlCommand command = new MySqlCommand("SELECT * FROM articulos",
+               connection.ObtenerConexion());
+            MySqlDataAdapter adapter = new MySqlDataAdapter(command);
+            DataTable dt2 = new DataTable();
+            adapter.Fill(dt2);
+
+            return dt2;
+        }
+
+
+
     }
 }
