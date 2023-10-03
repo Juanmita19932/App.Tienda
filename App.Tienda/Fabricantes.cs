@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App.Tienda
 {
-    internal class Fabricantes
+    public class Fabricantes
     {
         public int ClaveFabricante {  get; set; }
         public string Nombre { get; set; }

@@ -45,13 +45,6 @@ namespace App.Tienda
         }
          
 
-        public List<Fabricantes> ListaFabricantes()
-        {
-            return new List<Fabricantes>();
-        } 
-       public List <Articulos> ListaArticulos()
-        {
-            return new List<Articulos>();   
-        }
+   
     }
 }
